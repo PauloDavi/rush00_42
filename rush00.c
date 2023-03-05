@@ -6,7 +6,7 @@
 /*   By: paulodavi <paulodavi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/04 20:12:27 by pdavi-al          #+#    #+#             */
-/*   Updated: 2023/03/05 11:17:19 by paulodavi        ###   ########.fr       */
+/*   Updated: 2023/03/05 11:30:09 by paulodavi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_putchar(char c);
 
-void print_error_mesage(void)
+void	print_error_mesage(void)
 {
-	int i;
-	char*	message;
+	int		i;
+	char	*message;
 
 	i = 0;
 	message = "X and Y must be greater than or equal to zero.";
@@ -65,7 +65,7 @@ void	rush(int x, int y)
 	if (x <= 0 || y <= 0)
 	{
 		print_error_mesage();
-		return;
+		return ;
 	}
 	while (line < y)
 	{
